@@ -6,6 +6,30 @@
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <script src="javascript.js"></script>
+    <script src="javascript.js"></script> 
+    <div class="division">
+        <button id="btn1">Rock</button>
+        <button id="btn2">Scissors</button>
+        <button id="btn3">Paper</button>
+    </div>
+    <div class="results">
+
+        <h3>Results</h3>
+
+    </div>
+    <script>
+        const btn1=document.querySelector('#btn1');
+        const btn2=document.querySelector('#btn2');
+        const btn3=document.querySelector('#btn3');
+        const division=document.querySelector('.division')
+        division.addEventListener("click", playGame);
+
+        const results=document.querySelector('.results');
+        const outcome=document.querySelector(".results > h3");
+        const computer=document.createElement('div');
+        const human=document.createElement('div');
+        results.appendChild(computer);
+        results.appendChild(human);
+    </script>
 </body>
 </html>
